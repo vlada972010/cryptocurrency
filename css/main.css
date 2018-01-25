@@ -1,0 +1,193 @@
+body {
+    background: url('../images/coin_pile.jpg') center center/cover fixed;
+    font-family: nova-regular;
+}
+
+@font-face {
+    font-family: "nova-regular";
+    src: url("../fonts/proxima-nova-regular.ttf");
+}
+
+@font-face {
+    font-family: "nova-medium";
+    src: url("../fonts/proxima-nova-medium.ttf");
+}
+
+@font-face {
+    font-family: "nova-bold";
+    src: url("../fonts/proxima-nova-bold.ttf");
+}
+
+@font-face {
+    font-family: "nova-extrabold";
+    src: url("../fonts/proxima-nova-extrabold.ttf");
+}
+
+h1 {
+    font-size: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: #d80068;
+}
+
+#main {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#main > .container {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.terms {
+    text-align: left;
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+input#eth_amount {
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 6px 0;
+}
+
+.lead {
+
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.row {
+    width: 100%;
+    text-align: center;
+
+}
+
+.col-md {
+
+    width: 50%;
+    float: left;
+    margin-left: 25%;
+    text-align: left;
+}
+
+.col-md-6 {
+    width: 50%;
+    float: left;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.right1 {
+    margin-right: 380px;
+}
+
+.wrap {
+    width: 100%;
+    height: 100px;
+}
+
+.progress {
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+    background: rgb(231, 231, 231);
+    clear: both;
+}
+
+.progress-bar {
+    background: #d80068;
+    width: 50%;
+    height: 20px;
+    clear: both;
+    border-radius: 5px;
+}
+
+.btn {
+    border-radius: 5px;
+    border: none;
+    background: #d80068;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.form {
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    height: 34px;
+    padding: 3px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contract-address {
+    width: 75%;
+}
+
+.has-error {
+    color: red;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+#first-page {
+    display: block;
+}
+
+#second-page,
+#third-page,
+#fourth-page {
+    display: none;
+}
+
+.countdownContainer {
+    margin: 0 auto;
+    width: 40%;
+    font-family: "nova-bold";
+}
+
+.info {
+    font-size: 30px;
+
+}

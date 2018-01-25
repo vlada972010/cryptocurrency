@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <div class="container" id="first-page">
+            <p class="lead">Parsec Frontiers Pre-sale end in</p>
+
+            <table id="countdownContainer" class="countdownContainer">
+                <tr class="info">
+                    <td colspan="4"></td>
+                </tr>
+                <tr class="info">
+                    <td id="days"></td>
+                    <td id="hours"></td>
+                    <td id="minutes"></td>
+                    <td id="seconds"></td>
+                </tr>
+                <tr>
+                    <td>Days</td>
+                    <td>Hours</td>
+                    <td>Minutes</td>
+                    <td>Seconds</td>
+                </tr>
+            </table>
+
+            <div class="row">
+                <div class="col-md-6 text-left">
+                    <p class="lead">Number of PRSC sold</p>
+                    <p class="lead"><strong>85,5954,459.304435</strong></p>
+                </div>
+                <div class="col-md-6">
+                    <p class="lead">Number of PRSC still available</p>
+                    <p class="lead"><strong>580,030,069.230293</strong></p>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+            <p class="lead">Are you registred to the whitelist ?</p>
+            <button type="button" class="btn" id="buy-parsec">BUY PARCES CREDITS</button>
+        </div>
+
+        <div class="container" id="second-page">
+            <p><strong>In order to participate in the Parsec Frontiers Pre-sale you need to have a whitelisted address</strong></p>
+            <p class="lead">Please enter your address:</p>
+            <div class="row">
+                <div class="col md">
+                    <form class="form">
+                        <div class="form-group form-inline">
+                            <label>Ethereum address:</label>
+                            <input type="text" name="eth_address" class="form-control">
+                        </div>
+                        <div class="form-group form-inline">
+                            <label>or Email address:</label>
+                            <input type="text" name="email_address" class="form-control">
+                        </div>
+                        <p class="text-right right1">
+                            <button type="button" class="btn" id="next-page">NEXT</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="third-page">
+            <div id="terms-step" class="">
+                <p class="lead">Congratulations!
+                    <storng>ETH_ADDRESS</storng> is whitelisted</p>
+                <div class="col-md">
+                    <div class="terms">
+                        Generic Terms and Conditions template Terms and Conditions ("Terms") Last updated: (add date) Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the http://www.mywebsite.com (change this) website and the My Mobile App (change this) mobile application (the "Service") operated by My Company (change this) ("us", "we", or "our"). Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service. By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service. Purchases If you wish to purchase any product or service made available through the Service ("Purchase"), you may be asked to supply certain information relevant to your Purchase including, without limitation, your … The Purchases section is for businesses that sell online (physical or digital). For the full disclosure section, create your own Terms and Conditions. Subscriptions Some parts of the Service are billed on a subscription basis ("Subscription(s)"). You will be billed in advance on a recurring ... The Subscriptions section is for SaaS businesses. For the full disclosure section, create your own Terms and Conditions. Content Our Service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material ("Content"). You are responsible for the … The Content section is for businesses that allow users to create, edit, share, make content on their websites or apps. For the full disclosure section, create your own Terms and Conditions. Links To Other Web Sites Our Service may contain links to third-party web sites or services that are not owned or controlled by My Company (change this). My Company (change this) has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that My Company (change this) shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services. Changes We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 (change this) days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion. Contact Us If you have any questions about these Terms, please contact us.
+                    </div>
+                    <div class="form-group text-left ">
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="1" name="agree_terms" id="check" /> I have read and accept the Terms &amp; Conditions</label>
+                        </div>
+                    </div>
+                    <p class="text-right">
+                        <button type="button" class="btn" id="next2">NEXT</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="fourth-page">
+            <div class="col-md">
+                <p>
+                    Please send: <input type="text" name="eth_amount" size="5" id="eth_amount" value="10" class="form-control"> ETH to receive: <span id="prsc_amount">16,900,000</span> PRSC
+                </p>
+                <p>Parsec Frontiers Pre-sale contract address:</p>
+                <div class="input-group">
+                    <input id="contract-address" type="text" value="0x000000000000000000000" class="form-control" readonly>
+                </div>
+                <p>Gas limit: 100,000</p>
+                <p>Recommend gas price: 10 gwei</p>
+                <p>The contract address also can be resolved using ENS.</p>
+                <p>Please search for ParsecFrontiers.eth using <a href="https://etherscan.io/">etherscan.io</a>.</p>
+                <p class="text-right">
+                    <button type="button" class="btn" id="finish">FINISH</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+        function countdown() {
+            var now = new Date();
+            var eventDate = new Date(2018, 1, 0);
+
+            var currentTiime = now.getTime();
+            var eventTime = eventDate.getTime();
+
+            var remTime = eventTime - currentTiime;
+
+            if (remTime <= 0) {
+                document.getElementById('countdownContainer').style.display = 'none';
+                document.getElementById('greetingMsg').style.display = '';
+                return;
+            }
+
+            var s = Math.floor(remTime / 1000);
+            var m = Math.floor(s / 60);
+            var h = Math.floor(m / 60);
+            var d = Math.floor(h / 24);
+
+            h %= 24;
+            m %= 60;
+            s %= 60;
+
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+
+            document.getElementById("days").textContent = d;
+            document.getElementById("days").innerText = d;
+
+            document.getElementById("hours").textContent = h;
+            document.getElementById("minutes").textContent = m;
+            document.getElementById("seconds").textContent = s;
+
+            setTimeout(countdown, 1000);
+        }
+
+        countdown();
+
+        $(document).ready(function() {
+            $.ajax({
+                type: "GET",
+                url: "PRSCWhitelist.csv",
+                dataType: "text",
+                success: function(data) {
+                    processData(data);
+                }
+            });
+        });
+
+        function processData(allText) {
+            var allTextLines = allText.split(/\r\n|\n/);
+            var headers = allTextLines[0].split(',');
+            var lines = [];
+
+            for (var i = 1; i < allTextLines.length; i++) {
+                var data = allTextLines[i].split(',');
+                if (data.length == headers.length) {
+
+                    var tarr = [];
+                    for (var j = 0; j < headers.length; j++) {
+                        tarr.push(headers[j] + ":" + data[j]);
+                    }
+                    lines.push(tarr);
+                }
+            }
+            // alert(lines);
+        }
+    </script>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
